@@ -35,16 +35,6 @@ for (var i = 0; i < n; i++) {
     }
 }
 
-function clickSlide() {
-    $('i').removeClass('active');
-    $(this).addClass('active');
-    var id = $(this).attr('id');
-    id = id.split(" ");
-    id = id[1];
-    $('.images img.active').removeClass('active');
-    $('#number' + id).addClass('active');
-}
-
 function prevSlide() {
     var showImage = $('.images img.active');
     var showDot = $('.nav i.active');
